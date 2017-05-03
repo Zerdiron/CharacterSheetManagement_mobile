@@ -1,0 +1,626 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:gravity="center"
+    tools:context="zerdiron.fr.charactersheetmanagement.OverviewFragment">
+
+    <!-- Main layout -->
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <!-- ### NAME ### -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="6"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:hint="@string/name_label"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="#2c3e50"
+            android:textSize="30sp" />
+
+        <!-- ### LEVEL ### -->
+        <EditText
+            android:id="@+id/level"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="1"
+            android:gravity="fill"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="1"
+            android:gravity="fill"
+            android:labelFor="@id/level"
+            android:text="@string/labelLevel"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <!-- ### ALIGNMENT ### -->
+        <TextView
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="1"
+            android:gravity="fill"
+            android:text="@string/alignmentLabel"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/alignmentSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_row="1" />
+
+        <!-- ### CLASS ### -->
+        <TextView
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="2"
+            android:gravity="fill"
+            android:labelFor="@+id/characterClass"
+            android:text="@string/classLabel"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/characterClass"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="2"
+            android:gravity="fill"
+            android:inputType="text"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:text="@string/classSample"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <!-- ### RACE ### -->
+        <TextView
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="3"
+            android:gravity="fill"
+            android:labelFor="@+id/race"
+            android:text="@string/race"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/race"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="3"
+            android:gravity="fill"
+            android:inputType="text"
+            android:maxLines="1"
+            android:text="@string/raceSample"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <!-- ### STATS LABELS ### -->
+        <TextView
+            android:id="@+id/labelStats"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="4"
+            android:gravity="fill"
+            android:text="@string/first_column"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelStr"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:gravity="fill"
+            android:text="@string/str"
+            android:textColor="#2c3e50"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelDex"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="6"
+            android:gravity="fill"
+            android:text="@string/dex"
+            android:textAlignment="inherit"
+            android:textColor="#2c3e50"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelCon"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="7"
+            android:gravity="fill"
+            android:text="@string/con"
+            android:textAlignment="inherit"
+            android:textColor="#2c3e50"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelInt"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="8"
+            android:gravity="fill"
+            android:text="@string/intel"
+            android:textAlignment="inherit"
+            android:textColor="#2c3e50"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelWis"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="9"
+            android:gravity="fill"
+            android:text="@string/wis"
+            android:textAlignment="inherit"
+            android:textColor="#2c3e50"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelCha"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="10"
+            android:gravity="fill"
+            android:text="@string/cha"
+            android:textAlignment="inherit"
+            android:textAllCaps="true"
+            android:textColor="#2c3e50"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <!-- ### TOTAL ### -->
+        <TextView
+            android:id="@+id/labelTotal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="4"
+            android:gravity="fill"
+            android:text="@string/second_column"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/strTotal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:gravity="fill"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dexTotal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="6"
+            android:gravity="fill"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/conTotal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="7"
+            android:enabled="false"
+            android:gravity="fill"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/intTotal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="8"
+            android:enabled="false"
+            android:gravity="fill"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wisTotal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="9"
+            android:enabled="false"
+            android:gravity="fill"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chaTotal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="10"
+            android:enabled="false"
+            android:gravity="fill"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- ### MOD ### -->
+        <TextView
+            android:id="@+id/labelMod"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="4"
+            android:gravity="fill"
+            android:text="@string/third_column"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/strMod"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:gravity="fill"
+            android:text="@string/zero"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dexMod"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="6"
+            android:gravity="fill"
+            android:text="@string/zero"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/conMod"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="7"
+            android:gravity="fill"
+            android:text="@string/zero"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/intMod"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="8"
+            android:gravity="fill"
+            android:text="@string/zero"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wisMod"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="9"
+            android:gravity="fill"
+            android:text="@string/zero"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chaMod"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="10"
+            android:gravity="fill"
+            android:text="@string/zero"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- ### BASE ### -->
+        <TextView
+            android:id="@+id/labelBase"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="4"
+            android:gravity="fill"
+            android:text="@string/fourth_column"
+            android:textAllCaps="false"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/strBase"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/dexBase"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="6"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/conBase"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="7"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/intBase"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="8"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/wisBase"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="9"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/chaBase"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="10"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/dix"
+            android:textColor="#2c3e50" />
+
+        <!-- ### LEVEL ### -->
+        <TextView
+            android:id="@+id/labelLevel"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="4"
+            android:gravity="fill"
+            android:text="@string/fifth_column"
+            android:textAllCaps="false"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/strLevel"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/dexLevel"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="6"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/conLevel"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="7"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/intLevel"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="8"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/wisLevel"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="9"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/chaLevel"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="10"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <!-- ### MAGIC ### -->
+        <TextView
+            android:id="@+id/labelMagic"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="4"
+            android:gravity="fill"
+            android:text="@string/sixth_column"
+            android:textAllCaps="false"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/strMagic"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/dexMagic"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="6"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/conMagic"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="7"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/intMagic"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="8"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/wisMagic"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="9"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+        <EditText
+            android:id="@+id/chaMagic"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="10"
+            android:gravity="fill"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:text="@string/zero"
+            android:textColor="#2c3e50" />
+
+    </GridLayout>
+
+</LinearLayout>
