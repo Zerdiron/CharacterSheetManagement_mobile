@@ -22,20 +22,20 @@ public class StatsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View fragment = inflater.inflate(R.layout.fragment_stats, container, false);
+        View statsFragment = inflater.inflate(R.layout.fragment_stats, container, false);
 
-        Spinner spinner = (Spinner) fragment.findViewById(R.id.alignmentSpinner);
+        Spinner spinner = (Spinner) statsFragment.findViewById(R.id.alignmentSpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.alignmentContent, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
         /// ### FIRST LINE(STR) ### \\\
         // Set TextView in code from View.
-        final TextView strTot = (TextView) fragment.findViewById(R.id.strTotal);
-        final TextView strMod = (TextView) fragment.findViewById(R.id.strMod);
-        final TextView strBas = (TextView) fragment.findViewById(R.id.strBase);
-        final TextView strLev = (TextView) fragment.findViewById(R.id.strLevel);
-        final TextView strMag = (TextView) fragment.findViewById(R.id.strMagic);
+        final TextView strTot = (TextView) statsFragment.findViewById(R.id.strTotal);
+        final TextView strMod = (TextView) statsFragment.findViewById(R.id.strMod);
+        final TextView strBas = (TextView) statsFragment.findViewById(R.id.strBase);
+        final TextView strLev = (TextView) statsFragment.findViewById(R.id.strLevel);
+        final TextView strMag = (TextView) statsFragment.findViewById(R.id.strMagic);
 
         // Create TextWatcher
         final TextWatcher strWatcher = new TextWatcher() {
@@ -91,11 +91,11 @@ public class StatsFragment extends Fragment {
 
         /// ### SECOND LINE(DEX) ### \\\
         // Set TextView in code from View.
-        final TextView dexTot = (TextView) fragment.findViewById(R.id.dexTotal);
-        final TextView dexMod = (TextView) fragment.findViewById(R.id.dexMod);
-        final TextView dexBas = (TextView) fragment.findViewById(R.id.dexBase);
-        final TextView dexLev = (TextView) fragment.findViewById(R.id.dexLevel);
-        final TextView dexMag = (TextView) fragment.findViewById(R.id.dexMagic);
+        final TextView dexTot = (TextView) statsFragment.findViewById(R.id.dexTotal);
+        final TextView dexMod = (TextView) statsFragment.findViewById(R.id.dexMod);
+        final TextView dexBas = (TextView) statsFragment.findViewById(R.id.dexBase);
+        final TextView dexLev = (TextView) statsFragment.findViewById(R.id.dexLevel);
+        final TextView dexMag = (TextView) statsFragment.findViewById(R.id.dexMagic);
 
         // Create TextWatcher
         final TextWatcher dexWatcher = new TextWatcher() {
@@ -151,11 +151,11 @@ public class StatsFragment extends Fragment {
 
         /// ### THIRD LINE(CON) ### \\\
         // Set TextView in code from View.
-        final TextView conTot = (TextView) fragment.findViewById(R.id.conTotal);
-        final TextView conMod = (TextView) fragment.findViewById(R.id.conMod);
-        final TextView conBas = (TextView) fragment.findViewById(R.id.conBase);
-        final TextView conLev = (TextView) fragment.findViewById(R.id.conLevel);
-        final TextView conMag = (TextView) fragment.findViewById(R.id.conMagic);
+        final TextView conTot = (TextView) statsFragment.findViewById(R.id.conTotal);
+        final TextView conMod = (TextView) statsFragment.findViewById(R.id.conMod);
+        final TextView conBas = (TextView) statsFragment.findViewById(R.id.conBase);
+        final TextView conLev = (TextView) statsFragment.findViewById(R.id.conLevel);
+        final TextView conMag = (TextView) statsFragment.findViewById(R.id.conMagic);
 
         // Create TextWatcher
         final TextWatcher conWatcher = new TextWatcher() {
@@ -211,11 +211,11 @@ public class StatsFragment extends Fragment {
 
         /// ### FOURTH LINE(INT) ### \\\
         // Set TextView in code from View.
-        final TextView intTot = (TextView) fragment.findViewById(R.id.intTotal);
-        final TextView intMod = (TextView) fragment.findViewById(R.id.intMod);
-        final TextView intBas = (TextView) fragment.findViewById(R.id.intBase);
-        final TextView intLev = (TextView) fragment.findViewById(R.id.intLevel);
-        final TextView intMag = (TextView) fragment.findViewById(R.id.intMagic);
+        final TextView intTot = (TextView) statsFragment.findViewById(R.id.intTotal);
+        final TextView intMod = (TextView) statsFragment.findViewById(R.id.intMod);
+        final TextView intBas = (TextView) statsFragment.findViewById(R.id.intBase);
+        final TextView intLev = (TextView) statsFragment.findViewById(R.id.intLevel);
+        final TextView intMag = (TextView) statsFragment.findViewById(R.id.intMagic);
 
         // Create TextWatcher
         final TextWatcher intWatcher = new TextWatcher() {
@@ -271,11 +271,11 @@ public class StatsFragment extends Fragment {
 
         /// ### FIFTH LINE(WIS) ### \\\
         // Set TextView in code from View.
-        final TextView wisTot = (TextView) fragment.findViewById(R.id.wisTotal);
-        final TextView wisMod = (TextView) fragment.findViewById(R.id.wisMod);
-        final TextView wisBas = (TextView) fragment.findViewById(R.id.wisBase);
-        final TextView wisLev = (TextView) fragment.findViewById(R.id.wisLevel);
-        final TextView wisMag = (TextView) fragment.findViewById(R.id.wisMagic);
+        final TextView wisTot = (TextView) statsFragment.findViewById(R.id.wisTotal);
+        final TextView wisMod = (TextView) statsFragment.findViewById(R.id.wisMod);
+        final TextView wisBas = (TextView) statsFragment.findViewById(R.id.wisBase);
+        final TextView wisLev = (TextView) statsFragment.findViewById(R.id.wisLevel);
+        final TextView wisMag = (TextView) statsFragment.findViewById(R.id.wisMagic);
 
         // Create TextWatcher
         final TextWatcher wisWatcher = new TextWatcher() {
@@ -331,11 +331,11 @@ public class StatsFragment extends Fragment {
 
         /// ### SIXTH LINE(CHA) ### \\\
         // Set TextView in code from View.
-        final TextView chaTot = (TextView) fragment.findViewById(R.id.chaTotal);
-        final TextView chaMod = (TextView) fragment.findViewById(R.id.chaMod);
-        final TextView chaBas = (TextView) fragment.findViewById(R.id.chaBase);
-        final TextView chaLev = (TextView) fragment.findViewById(R.id.chaLevel);
-        final TextView chaMag = (TextView) fragment.findViewById(R.id.chaMagic);
+        final TextView chaTot = (TextView) statsFragment.findViewById(R.id.chaTotal);
+        final TextView chaMod = (TextView) statsFragment.findViewById(R.id.chaMod);
+        final TextView chaBas = (TextView) statsFragment.findViewById(R.id.chaBase);
+        final TextView chaLev = (TextView) statsFragment.findViewById(R.id.chaLevel);
+        final TextView chaMag = (TextView) statsFragment.findViewById(R.id.chaMagic);
 
         // Create TextWatcher
         final TextWatcher chaWatcher = new TextWatcher() {
@@ -389,7 +389,7 @@ public class StatsFragment extends Fragment {
         // Insert saved value to trigger TextWatcher.
         chaMag.setText(Integer.toString(MainActivity.chaMagic));
 
-        return fragment;
+        return statsFragment;
     }
 
 

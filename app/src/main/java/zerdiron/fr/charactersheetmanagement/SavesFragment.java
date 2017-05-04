@@ -14,8 +14,8 @@ public class SavesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View fragment = inflater.inflate(R.layout.fragment_saves, container, false);
+        View savesFragment = inflater.inflate(R.layout.fragment_saves, container, false);
 
-        return fragment;
+        return savesFragment;
     }
 }

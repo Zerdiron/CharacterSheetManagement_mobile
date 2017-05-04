@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     static int intBase = 10, intModify = 0, intLevel = 0, intMagic = 0, intProficiency = 0;
     static int wisBase = 10, wisModify = 0, wisLevel = 0, wisMagic = 0, wisProficiency = 0;
     static int chaBase = 10, chaModify = 0, chaLevel = 0, chaMagic = 0, chaProficiency = 0;
+    static int level = 1;
+    static String height = "7", weight = "180";
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override

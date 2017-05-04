@@ -14,11 +14,11 @@ public class OverviewFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View fragment = inflater.inflate(R.layout.fragment_overview, container, false);
+        View overviewFragment = inflater.inflate(R.layout.fragment_overview, container, false);
 
 
 
-        return fragment;
+        return overviewFragment;
     }
 }
 
