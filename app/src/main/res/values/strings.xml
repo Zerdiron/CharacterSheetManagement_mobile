@@ -1,34 +1,50 @@
 <resources>
+
     <!-- ### APP NAME ### -->
     <string name="app_name">CSM</string>
+
     <!-- ### VALUES ### -->
-    <string name="dix">10</string>
-    <string name="zero">0</string>
+    <string name="dix" translatable="false">10</string>
+    <string name="zero" translatable="false">0</string>
+
     <!-- ### NAME LABEL ### -->
     <string name="name_label">Enter your name</string>
+
     <!-- ### CLASS LABELS ### -->
     <string name="classLabel">Class</string>
     <string name="classSample">Warrior</string>
+
+    <!-- #### HEIGHT LABELS ### -->
+    <string name="HeightLabel">Height</string>
+    <string name="HeightSample">7</string>
+
+    <!-- #### WEIGHT LABELS ### -->
+    <string name="WeightLabel">Weight</string>
+    <string name="WeightSample">180</string>
+
     <!-- ### RACE LABELS ###  -->
     <string name="race">Race</string>
     <string name="raceSample">Human</string>
+
     <!-- ### COLUMNS' LABELS ### -->
     <string name="first_column">Stats</string>
-    <string name="second_column">Total</string>
-    <string name="third_column">Mod</string>
+    <string name="second_column" translatable="false">Total</string>
+    <string name="third_column" translatable="false">Mod</string>
     <string name="fourth_column">Base</string>
     <string name="fifth_column">Level</string>
     <string name="sixth_column">Magic</string>
+
     <!-- ### STATS ### -->
     <string name="str">STR</string>
-    <string name="dex">DEX</string>
-    <string name="con">CON</string>
-    <string name="intel">INT</string>
+    <string name="dex" translatable="false">DEX</string>
+    <string name="con" translatable="false">CON</string>
+    <string name="intel" translatable="false">INT</string>
     <string name="wis">WIS</string>
-    <string name="cha">CHA</string>
+    <string name="cha" translatable="false">CHA</string>
     <string name="labelLevel">Level</string>
+
     <!-- ### ALIGNMENT ### -->
-    <string name="alignment">N</string>
+    <string name="alignment" translatable="false">N</string>
     <string name="alignmentLabel">Alignment</string>
     <string-array name="alignmentContent">
         <item>LG</item>
@@ -44,10 +60,8 @@
 
     <!-- ### BOTTOM NAVIGATION VIEW ### -->
     <string name="bar_overview">Overview</string>
-    <string name="bar_stats">Stats</string>
+    <string name="bar_stats">Statistics</string>
     <string name="bar_saves">Saves</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bar_attacks">Attacks</string>
 
 </resources>

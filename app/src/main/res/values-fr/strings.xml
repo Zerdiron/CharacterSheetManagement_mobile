@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CSM</string>
+    <string name="HeightLabel">Taille</string>
+    <string name="HeightSample">180</string>
+    <string name="WeightLabel">Poids</string>
+    <string name="WeightSample">90</string>
+    <string name="alignmentLabel">Alignement</string>
+    <string name="bar_overview">Aperçu</string>
+    <string name="bar_saves">Sauvegardes</string>
+    <string name="bar_stats">Caractéristiques</string>
+    <string name="classLabel">Classe</string>
+    <string name="classSample">Guerrier</string>
+    <string name="first_column">Caracs</string>
+    <string name="fifth_column">Niv.</string>
+    <string name="fourth_column">Base</string>
+    <string name="str">FOR</string>
+    <string name="wis">SAG</string>
+    <string name="labelLevel">Niveau</string>
+    <string name="name_label">Entrez votre nom</string>
+    <string name="race">Race</string>
+    <string name="raceSample">Humain</string>
+    <string name="sixth_column">Magie</string>
+    <string name="bar_attacks">Attaques</string>
+</resources>

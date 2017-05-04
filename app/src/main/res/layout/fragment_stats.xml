@@ -107,6 +107,35 @@
             android:textColor="#2c3e50"
             android:textSize="20sp" />
 
+        <!-- ### HEIGHT ### -->
+        <TextView
+            android:layout_column="4"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="2"
+            android:gravity="fill"
+            android:labelFor="@+id/characterClass"
+            android:text="@string/HeightLabel"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_column="5"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="2"
+            android:gravity="fill"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:text="@string/HeightSample"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+
         <!-- ### RACE ### -->
         <TextView
             android:layout_column="0"
@@ -131,6 +160,34 @@
             android:inputType="text"
             android:maxLines="1"
             android:text="@string/raceSample"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <!-- ### HEIGHT ### -->
+        <TextView
+            android:layout_column="4"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="3"
+            android:gravity="fill"
+            android:labelFor="@+id/characterClass"
+            android:text="@string/WeightLabel"
+            android:textColor="#2c3e50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_column="5"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_row="3"
+            android:gravity="fill"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:text="@string/WeightSample"
             android:textColor="#2c3e50"
             android:textSize="20sp" />
 

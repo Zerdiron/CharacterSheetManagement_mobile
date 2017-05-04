@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
                                 .replace(R.id.fragmentContent, savesFragment).commit();
                     }
                     return true;
+                case R.id.navigation_attacks:
+                    if (findViewById(R.id.fragmentContent) != null) {
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.fragmentContent, savesFragment).commit();
+                    }
+                    return true;
             }
             return false;
         }

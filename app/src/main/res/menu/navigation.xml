@@ -8,12 +8,17 @@
 
     <item
         android:id="@+id/navigation_stats"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_star"
         android:title="@string/bar_stats" />
 
     <item
         android:id="@+id/navigation_saves"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_shield"
         android:title="@string/bar_saves" />
+
+    <item
+        android:id="@+id/navigation_attacks"
+        android:icon="@drawable/ic_weapon"
+        android:title="@string/bar_attacks" />
 
 </menu>
