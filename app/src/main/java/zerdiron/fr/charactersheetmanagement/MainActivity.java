@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     static int wisBase = 10, wisModify = 0, wisLevel = 0, wisMagic = 0, wisProficiency = 0;
     static int chaBase = 10, chaModify = 0, chaLevel = 0, chaMagic = 0, chaProficiency = 0;
     static int level = 1;
-    static String height = "7", weight = "180";
+    static String height = "7", weight = "180", name = "@string/name_label";
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -30,28 +30,24 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.navigation_overview:
-                    if (findViewById(R.id.fragmentContent) != null) {
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragmentContent, overviewFragment).commit();
-                    }
+                    if (findViewById(R.id.fragmentContent) != null)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContent, overviewFragment).commit();
                     return true;
                 case R.id.navigation_stats:
-                    if (findViewById(R.id.fragmentContent) != null) {
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragmentContent, statsFragment).commit();
-                    }
+                    if (findViewById(R.id.fragmentContent) != null)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContent, statsFragment).commit();
                     return true;
                 case R.id.navigation_saves:
-                    if (findViewById(R.id.fragmentContent) != null) {
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragmentContent, savesFragment).commit();
-                    }
+                    if (findViewById(R.id.fragmentContent) != null)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContent, savesFragment).commit();
                     return true;
-                case R.id.navigation_attacks:
-                    if (findViewById(R.id.fragmentContent) != null) {
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragmentContent, savesFragment).commit();
-                    }
+                case R.id.navigation_fight:
+                    if (findViewById(R.id.fragmentContent) != null)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContent, savesFragment).commit();
+                    return true;
+                case R.id.navigation_skills:
+                    if (findViewById(R.id.fragmentContent) != null)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContent, savesFragment).commit();
                     return true;
             }
             return false;
@@ -65,10 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
         OverviewFragment overviewFragment = new OverviewFragment();
 
-        if (findViewById(R.id.fragmentContent) != null) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragmentContent, overviewFragment).commit();
-        }
+        if (findViewById(R.id.fragmentContent) != null)
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContent, overviewFragment).commit();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

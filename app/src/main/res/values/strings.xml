@@ -62,6 +62,7 @@
     <string name="bar_overview">Overview</string>
     <string name="bar_stats">Statistics</string>
     <string name="bar_saves">Saves</string>
-    <string name="bar_attacks">Attacks</string>
+    <string name="bar_fight">Fight</string>
+    <string name="bar_skills">Skills</string>
 
 </resources>

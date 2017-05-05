@@ -17,8 +17,13 @@
         android:title="@string/bar_saves" />
 
     <item
-        android:id="@+id/navigation_attacks"
-        android:icon="@drawable/ic_weapon"
+        android:id="@+id/navigation_fight"
+        android:icon="@drawable/ic_fight"
+        android:title="@string/bar_attacks" />
+
+    <item
+        android:id="@+id/navigation_skills"
+        android:icon="@drawable/ic_skills"
         android:title="@string/bar_attacks" />
 
 </menu>
